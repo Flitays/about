@@ -14,6 +14,7 @@ TweenMax.from(".title", 2, {
 
 TweenMax.from(".title-main", 2, {
     delay: 1.2,
+    y: 90,
     opacity: 0,
     ease: Expo.easeInOut
 });
