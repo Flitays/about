@@ -44,7 +44,7 @@ TweenMax.from(".contact-subtitle", 2, {
 
 
 // --------------------------------------------------------------------
- const text = new Blotter.Text('Hello', {
+const text = new Blotter.Text('Hello', {
     family: "Montserrat",
     size: 120,
     weight: 700,
@@ -58,22 +58,22 @@ material.uniforms.uVolatility.value = 0.1;
 material.uniforms.uSeed.value = 0.1;
 
 let blotter = new Blotter(material, {
-  texts: text
+    texts: text
 });
 
 let scope = blotter.forText(text);
 let elem = document.getElementById('main');
 scope.appendTo(elem);
 
-$('.b-canvas').mousemove(function(e) {	
-	const formula = ((e.pageX * e.pageY) / 200000) / 1.5;
-	// const number = formula.toFixed(1);
-	
-	material.uniforms.uVolatility.value = formula;
-	material.uniforms.uSeed.value = formula;
-	
+$('.b-canvas').mousemove(function (e) {
+    const formula = ((e.pageX * e.pageY) / 200000) / 1.5;
+    // const number = formula.toFixed(1);
+
+    material.uniforms.uVolatility.value = formula;
+    material.uniforms.uSeed.value = formula;
+
 });
-	
+
 
 
 // ---------------------------------------------------------------------
@@ -82,19 +82,19 @@ $('.b-canvas').mousemove(function(e) {
 const copytext = document.querySelector("#copy");
 const copytitle = document.querySelector("#copytit");
 
-copytext.onclick = function() {
-  document.execCommand("copy");
-}; 
+copytext.onclick = function () {
+    document.execCommand("copy");
+};
 
-copytext.addEventListener("copy", function(event) {
+copytext.addEventListener("copy", function (event) {
     event.preventDefault();
     if (event.clipboardData) {
-      event.clipboardData.setData("text/plain", copytext.textContent);
-      console.log(event.clipboardData.getData("text"))
+        event.clipboardData.setData("text/plain", copytext.textContent);
+        console.log(event.clipboardData.getData("text"))
     }
 
     copytitle.classList.toggle("active");
-    setTimeout(function(){
+    setTimeout(function () {
         copytitle.classList.toggle("active");
     }, 1500)
 });
