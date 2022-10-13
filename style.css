@@ -369,6 +369,7 @@ html, body {
 /*--------------------Content--------------------*/
 
 .content {
+  margin-top: 60px;
   max-width: 1280px;
   padding-left: 20px;
   padding-right: 20px;
