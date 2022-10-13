@@ -1,40 +1,34 @@
 //---------------------------------------------------------------------
 
-TweenMax.to(".wrapper", 2, {
-    top: "-110%",
-    ease: Expo.easeInOut,
-    delay: 0.4
-});
-
 TweenMax.from(".title", 2, {
-    delay: 1,
+    delay: 0.4,
     opacity: 0,
     ease: Expo.easeInOut
 });
 
 TweenMax.from(".title-main", 2, {
-    delay: 1.2,
+    delay: 0.8,
     y: 90,
     opacity: 0,
     ease: Expo.easeInOut
 });
 
 TweenMax.from(".contact-title", 2, {
-    delay: 1.4,
+    delay: 1.0,
     y: 90,
     opacity: 0,
     ease: Expo.easeInOut
 });
 
 TweenMax.from(".icons", 2, {
-    delay: 1.6,
+    delay: 1.2,
     y: 90,
     opacity: 0,
     ease: Expo.easeInOut
 });
 
 TweenMax.from(".contact-subtitle", 2, {
-    delay: 1.8,
+    delay: 1.4,
     y: 90,
     opacity: 0,
     ease: Expo.easeInOut
